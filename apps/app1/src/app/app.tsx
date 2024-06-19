@@ -4,7 +4,7 @@ export function App() {
   return (
     <div>
       <NxWelcome title="app1" />
-      test app QQ
+      test app
     </div>
   );
 }
