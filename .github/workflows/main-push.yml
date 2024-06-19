@@ -30,7 +30,6 @@ jobs:
         with:
           default-branch: main
           package-name: nx-monorepo
-          path: .
           release-type: node
       - name: Print release outputs
         shell: bash
