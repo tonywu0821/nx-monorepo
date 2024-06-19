@@ -38,7 +38,7 @@ jobs:
 
 
   build-environment-cache:
-    if: ${{!needs.release-please.result}}
+    if: ${{!needs.release-please.outputs.release_created}}
     runs-on: ubuntu-latest
     needs: release-please
     steps:
