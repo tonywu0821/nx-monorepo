@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.4.0](https://github.com/tonywu0821/nx-monorepo/compare/v1.3.0...v1.4.0) (2024-06-19)
+
+
+### Features
+
+* test workflow ([0a79a8b](https://github.com/tonywu0821/nx-monorepo/commit/0a79a8b6791c98c5f074d0ad5cf89ddfbe8210e2))
+
 ## [1.3.0](https://github.com/tonywu0821/nx-monorepo/compare/v1.2.0...v1.3.0) (2024-06-19)
 
 
