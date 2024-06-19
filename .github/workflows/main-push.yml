@@ -29,13 +29,12 @@ jobs:
         id: release
         with:
           default-branch: main
-          path: .
           package-name: nx-monorepo
           release-type: node
       - name: Print release outputs
         shell: bash
         run: | 
-          echo "release_created: ${{ steps.set-output.outputs.release_created }}"
+          echo "release_created: ${{ steps.release.outputs.release_created }}"
 
 
   build-environment-cache:
