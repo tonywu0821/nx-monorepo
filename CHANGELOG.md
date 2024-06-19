@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.2.0](https://github.com/tonywu0821/nx-monorepo/compare/v1.1.0...v1.2.0) (2024-06-19)
+
+
+### Features
+
+* test workflow ([a3611d2](https://github.com/tonywu0821/nx-monorepo/commit/a3611d259094c09346dd4aa761db5e776967da9e))
+
+
+### Bug Fixes
+
+* update workflow ([b97abae](https://github.com/tonywu0821/nx-monorepo/commit/b97abae79f9e159d6ca0b284ac44fb7693c3a1cf))
+
 ## [1.1.0](https://github.com/tonywu0821/nx-monorepo/compare/v1.0.0...v1.1.0) (2024-06-19)
 
 
