@@ -1,4 +1,4 @@
-name: Task A with Artifact Handling
+name: Task A with Artifact Handling and Compression
 
 on:
   push:
@@ -17,8 +17,16 @@ jobs:
       uses: actions/download-artifact@v3
       continue-on-error: true
       with:
-        name: nx-cache
-        path: .nx
+        name: nx-cache-compressed
+        path: .
+
+    - name: Decompress artifact if exists
+      if: steps.check_artifact.outcome == 'success'
+      run: |
+        if [ -f "nx-cache.tar.gz" ]; then
+          tar -xzf nx-cache.tar.gz
+          rm nx-cache.tar.gz
+        fi
 
     - name: Run Task A
       id: task_a
@@ -39,11 +47,15 @@ jobs:
         # Always fail the task
         echo "Task A is failing intentionally"
         exit 1
-      
-    - name: Upload .nx folder as artifact
+
+    - name: Compress .nx folder
+      if: failure()
+      run: tar -czf nx-cache.tar.gz .nx
+
+    - name: Upload compressed .nx folder as artifact
       if: failure()
       uses: actions/upload-artifact@v3
       with:
-        name: nx-cache
-        path: .nx
-        retention-days: 1  # Adjust as needed
+        name: nx-cache-compressed
+        path: nx-cache.tar.gz
+        retention-days: 1  
