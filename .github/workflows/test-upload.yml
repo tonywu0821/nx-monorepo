@@ -1,0 +1,49 @@
+name: Task A with Artifact Handling
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  task_a:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Check for artifact from previous run
+      id: check_artifact
+      uses: actions/download-artifact@v3
+      continue-on-error: true
+      with:
+        name: nx-cache
+        path: .nx
+
+    - name: Run Task A
+      id: task_a
+      run: |
+        if [ -d ".nx" ] && [ "$(ls -A .nx)" ]; then
+          echo "Using data from previous run"
+          echo "Previous run data:" >> .nx/output.txt
+          cat .nx/output.txt
+        else
+          echo "Running Task A from scratch"
+          mkdir -p .nx
+          echo "Initial run data" > .nx/output.txt
+        fi
+        
+        # Add a timestamp to the output file
+        echo "Run at: $(date)" >> .nx/output.txt
+        
+        # Always fail the task
+        echo "Task A is failing intentionally"
+        exit 1
+      
+    - name: Upload .nx folder as artifact
+      if: failure()
+      uses: actions/upload-artifact@v3
+      with:
+        name: nx-cache
+        path: .nx
+        retention-days: 1  # Adjust as needed
