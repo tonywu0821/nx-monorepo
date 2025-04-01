@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.5.0](https://github.com/tonywu0821/nx-monorepo/compare/v1.4.0...v1.5.0) (2025-04-01)
+
+
+### Features
+
+* **nx-cloud:** setup nx cloud workspace  ([c64ab10](https://github.com/tonywu0821/nx-monorepo/commit/c64ab10199cf70dc1896cb85eea43c70ffcad693))
+* release pls ([3494f87](https://github.com/tonywu0821/nx-monorepo/commit/3494f877b9f493446213b3c43cb26285a211959d))
+
 ## [1.4.0](https://github.com/tonywu0821/nx-monorepo/compare/v1.3.0...v1.4.0) (2024-06-19)
 
 
