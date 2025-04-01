@@ -25,12 +25,9 @@ jobs:
     outputs:
       release_created: ${{ steps.release.outputs.release_created }}
     steps:
-      - uses: googleapis/release-please-action@v3
+      - uses: googleapis/release-please-action@v4
         id: release
         with:
-          default-branch: main
-          path: .
-          package-name: nx-monorepo
           release-type: node
       - name: Print release outputs
         shell: bash
