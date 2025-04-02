@@ -1,3 +1,6 @@
+## [1.5.2](https://github.com/tonywu0821/nx-monorepo/compare/v1.4.0...v1.5.0) (2025-04-01)
+
+
 ## [1.5.1](https://github.com/tonywu0821/nx-monorepo/compare/v1.4.0...v1.5.0) (2025-04-01)
 
 ### Features
