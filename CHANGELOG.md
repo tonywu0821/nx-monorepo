@@ -1,4 +1,16 @@
-# Changelog
+## [1.5.1](https://github.com/tonywu0821/nx-monorepo/compare/v1.4.0...v1.5.0) (2025-04-01)
+
+### Features
+
+* trigger release ([a64a927](https://github.com/tonywu0821/nx-monorepo/commit/a64a927177b883f65ec20166ae601e70c4b4a20f))
+
+
+## [1.5.0](https://github.com/tonywu0821/nx-monorepo/compare/v1.4.0...v1.5.0) (2025-04-01)
+
+### Features
+
+* force bump  ([f71ecb3](https://github.com/tonywu0821/nx-monorepo/commit/f71ecb3141909523fa0b2fa9a5755cb28d52a873))
+
 
 ## [1.4.0](https://github.com/tonywu0821/nx-monorepo/compare/v1.3.0...v1.4.0) (2024-06-19)
 
