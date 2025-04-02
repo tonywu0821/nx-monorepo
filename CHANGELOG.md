@@ -1,6 +1,13 @@
 ## [1.5.2](https://github.com/tonywu0821/nx-monorepo/compare/v1.4.0...v1.5.0) (2025-04-01)
 
 
+## [1.6.0](https://github.com/tonywu0821/nx-monorepo/compare/v1.5.2...v1.6.0) (2025-04-02)
+
+
+### Features
+
+* test push ([ccee657](https://github.com/tonywu0821/nx-monorepo/commit/ccee657cda96f10bedb98d036c8f090566115d62))
+
 ## [1.5.1](https://github.com/tonywu0821/nx-monorepo/compare/v1.4.0...v1.5.0) (2025-04-01)
 
 ### Features
