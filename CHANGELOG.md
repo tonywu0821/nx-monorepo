@@ -1,6 +1,14 @@
 ## [1.5.2](https://github.com/tonywu0821/nx-monorepo/compare/v1.4.0...v1.5.0) (2025-04-01)
 
 
+## [1.7.0](https://github.com/tonywu0821/nx-monorepo/compare/v1.6.0...v1.7.0) (2025-04-02)
+
+
+### Features
+
+* a ([#15](https://github.com/tonywu0821/nx-monorepo/issues/15)) ([e507dfb](https://github.com/tonywu0821/nx-monorepo/commit/e507dfb9e87ba3f1870f2c27bd2876771ab1282f))
+* c ([#16](https://github.com/tonywu0821/nx-monorepo/issues/16)) ([d4b960c](https://github.com/tonywu0821/nx-monorepo/commit/d4b960c0118063cb0eff98a3c565c84e24b8e2d3))
+
 ## [1.6.0](https://github.com/tonywu0821/nx-monorepo/compare/v1.5.2...v1.6.0) (2025-04-02)
 
 
